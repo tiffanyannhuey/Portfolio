@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tiffany Huey Portfolio</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/layout.css">
+
+</head>
+<body>
+
+  <div class="main-content">
+    <section class="media-display row">
+        <div class="col-md-12">
+          <img src="assets/linentablecloth/linentablecloth.png" alt="LinenTablecloth Storefront">
+        </div>
+
+    <section class="work-description row">
+    <div class="col-md-12">
+      <h1>LinenTablecloth Storefront Functionality</h1>
+      <p>The client wanted to have two separate projects for displaying promos on their storefront.</p>
+      <h2>Storefront Hero Banner Slider</h2>
+      <p>The first project was to convert their hero banner to a slider in order to display multiple promotions. The client wanted the ability to swap out the images/text for each slider without going into the code, and have varying number of banners at any given time. This hero banner slider was built using the Slick Slider JS plugin, Miva Readytheme Images/ Content Sections, and the Miva Limited Source Kit (LSK) API. I assigned a unique identifier to the Readytheme Images for the banner, and then leveraged LSK to load the Images onto the storefront page by their unique identifier. If the Readytheme Image was toggled as active, display the image and load in it's corresponding Readytheme Content section with the same unique identifier.</p>
+      <br>
+      <h2>Storefront Promotion Pre-Scheduling Functionality</h2>
+      <p>The client also wanted the ability to pre-schedule promotions on different areas of their storefront in advance. Specs included:</p>
+      <ul>
+        <li>The ability to schedule up to 16 promotions at a time</li>
+        <li>Timezone could be set to store system time (EST)</li>
+        <li>They wanted to cohesively time the promotions with their sales/marketing campaigns</li>
+        <li>They wanted the promotions to dynamically change without going into the code</li>
+      </ul>
+      <p>To build out scheduling functionality, I made use of the Marketing Price Groups capability in the Miva Merchant admin. Price Groups are a marketing tool that allows the admin to set basket/shipping/product discounts, coupons, etc. with the ability to set an active date range but does not natively control any display on the store. I created 16 set Price Groups for each of the promo sections using a separate unique ID, which can be modified by the client at any given time. and Using Miva's LSK API, I ran logic to loop through the designated Price Groups to see if any were active - if they are active Price Groups, another condition was run to see if the system time was currently within the date range and displayed the timed promotional banner if true. If there a currently no active Price Groups, then the logic will show the default promotional settings. </p>
+      <p>You can visit their site <a href="https://www.linentablecloth.com" target="blank">here</a></p>
+    </div>   
+    </section>
+
+  </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>

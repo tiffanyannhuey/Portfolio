@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tiffany Huey Portfolio</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/layout.css">
+
+</head>
+<body>
+
+  <div class="main-content">
+    <section class="media-display row">
+        <div class="col-md-12">
+          <img src="assets/thepaperstore/thepaperstore.png" alt="The Paper Store">
+        </div>
+
+    <section class="work-description row">
+    <div class="col-md-12">
+      <h1>The Paper Store Google Structured Data with YotPo</h1>
+      <p>The Paper Store requested to add schema data to the storefront, category, and product pages as requested by their SEO team. </p>
+      <p>Category page structure data was built in carousel format: https://developers.google.com/search/docs/guides/mark-up-listings</p>
+
+      <p>For the product schema data, I noticed that their Yotpo integration includes a separate product schema data out of the package for products that have reviews, which could not be modified. I removed this and added a manual call to Yotpo API so that I can insert their aggregate review data along with other product schema data for name, description, brand, and offers.</p>
+      <ul>
+        <li>View Storefront schema <a href="https://search.google.com/structured-data/testing-tool/u/0/#url=https%3A%2F%2Fwww.thepaperstore.com%2F" title="The Paper Store Storefront Schema" target="blank">here</a></li>
+        <li>View Category schema <a href="https://search.google.com/structured-data/testing-tool/u/0/#url=https%3A%2F%2Fwww.thepaperstore.com%2Fc%2Fpillows-throws%3Fea%3Dnav_home%26el%3Dblankets" title="The Paper Store Category Schema" target="blank">here</a></li>
+        <li>View Product schema <a href="https://search.google.com/structured-data/testing-tool/u/0/#url=https%3A%2F%2Fwww.thepaperstore.com%2Fp%2Fvera-bradley-go-fish-embroidered-ribbon-pillow-rectangle%2F50456900005" title="The Paper Store Product Schema" target="blank">here</a></li>
+      </ul>
+      
+      <p>You can visit their site <a href="http://thepaperstore.com/" title="The Paper Store" target="blank">here</a></p>
+    </div>   
+    </section>
+
+  </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>

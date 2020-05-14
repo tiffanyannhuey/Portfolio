@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tiffany Huey Portfolio</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/layout.css">
+
+</head>
+<body>
+
+  <div class="main-content">
+    <section class="media-display row">
+        <div class="col-md-12">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/akOoSvHMqmg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+
+    <section class="work-description row">
+    <div class="col-md-12">
+      <h1>Plant Therapy Multi-Add-To-Cart Functionality</h1>
+      <p>This project was an interesting one because I had the opportunity to play with a new feature rolled out from the Miva 9.07 release, native predictive search. </p>
+      <p>Plant Therapy had an existing customized quick add page that was built in Angular - the code would read the products from a file and perform a fuzzy search of those products. The client wanted to try replacing this code with the new native live search preview as it would perform an improved search of all the products in the database and give the admin better control of searchable fields (code, sku, product description, etc.). Since this client is using a third party, Searchspring, for their global search we were able to leverage the native search functionality for this proof-of-concept.</p>
+      <p>First, I modified the searchfield_menu_dropdown so that each result contained data for product description, sale pricing, etc. I updated the search field prototype to modify the functionality so that it would not lead to the product page on click; rather, it would append an input into the multi-add-to-cart form. The client has the ability to update the quantity or remove the product from the form.</p>
+      <p>By default, the native search will pull all active products in the database. Plant Therapy had active master products and variants; however, they only wanted the variants to display in the results (i.e. Lemon Essential Oil 10ml, Lemon Essential Oil 30ml, instead of Lemon Essential Oil). Using Miva's LSK, I ran functions to see if the product being called was associated with a master product, and if not NULL, then display the variant with it's current sale pricing. Additional logic for pricing was run on the variant since Plant Therapy has varying price groups for wholesale, employee, etc.</p>
+      <p>You can visit their website <a href="https://www.planttherapy.com/" title="Plant Therapy" target="blank">here</a>.</p>
+    </div>   
+    </section>
+
+  </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
