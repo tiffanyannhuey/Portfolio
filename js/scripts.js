@@ -1,18 +1,21 @@
 const fadeIn = () => {
-  $('.fade-in').each( function () {
 
-      let top_of_object = $(this).position().top;
-      let bottom_of_window = $(window).scrollTop() + $(window).height();
-
-      if (bottom_of_window > top_of_object) {
-
-          $(this).animate({
-              'opacity': '1'
-          }, 500);
-
-      } 
+  $(window).on("load",function() {
+    $(window).scroll(function() {
+      let windowBottom = $(this).scrollTop() + $(this).innerHeight();
+      $(".fade-in").each(function() {
+        let top_of_object = $(this).offset().top;
+        
+        if (top_of_object < windowBottom) { 
+          if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+        } else { 
+          if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+        }
+      });
+    }).scroll(); 
   });
 }
+
 
 fadeIn();
 
@@ -38,9 +41,9 @@ $('.work-wrapper').on('click', function(e){
     });
 })
 
-$(window).scroll( () => {
-  fadeIn();
-});
+// $(window).scroll( () => {
+//   fadeIn();
+// });
 
 const backToTop = () => {
 

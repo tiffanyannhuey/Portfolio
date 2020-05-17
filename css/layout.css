@@ -138,6 +138,10 @@ a {
   font-size: large;
 }
 
+.work-description p {
+  margin: 1em;
+}
+
 @media only screen and (min-width: 992px) {
   .main-content {
     padding: 0rem;
@@ -219,5 +223,5 @@ a {
 }
 
 .fade-in {
-  opacity: 0;
+  opacity: 1;
 }
