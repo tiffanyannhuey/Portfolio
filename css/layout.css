@@ -238,3 +238,25 @@ a {
 .fade-in {
   opacity: 1;
 }
+
+.carousel-caption {
+  color: #333;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 1.75rem;
+  background: rgba(255,255,255, .7);
+  box-shadow: 0 0 12px rgba(255, 255, 255, .7);
+}
+
+.carousel-indicators li {
+  background-color: #E7EBED;
+  border: 1px solid #4d9293;
+}
+
+.carousel-indicators .active {
+  background-color: #4d9293;
+}
+
+.carousel-control .glyphicon::before,
+.carousel-control .glyphicon::after {
+  color: #4d9293;
+}
