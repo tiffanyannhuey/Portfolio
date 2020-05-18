@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tiffany Huey Portfolio</title>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/layout.css">
 
@@ -15,21 +16,94 @@
   <div class="main-content">
     <section class="media-display row">
         <div class="col-md-12">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/VYSoXqGvIMQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <!-- <img src="assets/fortunebuilders/coaching_cal.png" alt="FortuneBuilders Call Reschedule">
+         -->
+
+            <div id="fb-carousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#fb-carousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#fb-carousel" data-slide-to="1"></li>
+                  <li data-target="#fb-carousel" data-slide-to="2"></li>
+                </ol>
+              
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img src="assets/fortunebuilders/dashboard.png" alt="LMS Dashboard View">
+                    <div class="carousel-caption">
+                      This is the stduent dashboard view including hero slider, any notifications, and curriuculum widget.
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="assets/fortunebuilders/dashboard_widgets.png" alt="LMS Dashboard Widgets">
+                    <div class="carousel-caption">
+                      This is the student dashboard widgets including group coaching (webinars), upcoming live events, and coaching calls.
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="assets/fortunebuilders/curriculum_view.png" alt="LMS Learning Page Curriculum View">
+                    <div class="carousel-caption">
+                      This is the curriculum view on the LMS Learning page. 
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="assets/fortunebuilders/module_view.png" alt="LMS Module View">
+                    <div class="carousel-caption">
+                      On the LMS Learning page, this is the drilled down Module view after a student selects a curriculum.
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="assets/fortunebuilders/lesson_view.png" alt="LMS Lesson View">
+                    <div class="carousel-caption">
+                        On the LMS Learning page, this is the drilled down Lesson view after a student selects a module.
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="assets/fortunebuilders/coaching_cal.png" alt="Coaching Page Call Calendar">
+                    <div class="carousel-caption">
+                      This is the student facing coaching calendar where students can book Real Estate or Internet Quickstart calls
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="assets/fortunebuilders/coaching_expired.png" alt="Coaching Page Call Calendar Expired View">
+                    <div class="carousel-caption">
+                      This is the student facing coaching calendar display when student call permissions have expired.
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="assets/fortunebuilders/coaching_widgets.png" alt="Coaching Page Call Calendar Widgets">
+                    <div class="carousel-caption">
+                      These are the coaching widgets displayed on the Coaching page.
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="assets/fortunebuilders/systems_resources.png" alt="Systems and Resources">
+                    <div class="carousel-caption">
+                      This is the resources page where students can access various wordpress widgets.
+                    </div>
+                  </div>
+                </div>
+              
+                <!-- Controls -->
+                <a class="left carousel-control" href="#fb-carousel" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#fb-carousel" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
         </div>
 
     <section class="work-description row">
     <div class="col-md-12">
-      <h1>Borsheims Share/Email Wishlist Functionality</h1>
-      <p>Borsheims wanted their customers to have the ability to share their wishlists via social media and email.</p>
-      <p>There are two conditions for the wishlist. If the wishlist is made public, then on click it would send the wishlist information to whichever channel they wanted to share it on. If the wishlist is private and the customer attempts to share, they would be notified to make the wishlist public in order to share. </p>
-      <p>The email portion is tied with the Coupon module, which generates a unique coupon code associated with a Price Group. When the form is filled out, the coupon code along with all the field information is sent to a php file on the server which triggers the email and writes the coupon code to a csv file, which is then imported back into the admin via a feed to tie the coupon to the price group.</p>
-    </div>   
+      <h1>Fortune Builders UI Redesign</h1>  
     </section>
-
   </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>
