@@ -16,7 +16,6 @@ const fadeIn = () => {
   });
 }
 
-
 fadeIn();
 
 if ($(window).innerWidth() > 991) { 
@@ -34,16 +33,11 @@ $('.work-wrapper').on('click', function(e){
   e.preventDefault();
   let text = $(this).find('.work-title').html();
   let url = $(this).find('.link').attr('href');
-  console.log("url is", url);
 
   $('.modal-body').load('' + url + ' .main-content',function(){
         $('#myModal').modal({show:true});
     });
 })
-
-// $(window).scroll( () => {
-//   fadeIn();
-// });
 
 const backToTop = () => {
 
